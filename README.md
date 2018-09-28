@@ -1,4 +1,4 @@
-# Assignment 2 - Promotions
+# Assignment 2 - Promotion
 
 **Posted:** Sept 28, 2018
 
