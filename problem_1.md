@@ -49,7 +49,6 @@ e.g.
 
 ```
 Order #1
-Order #1
 2018-09-28
 150 Elgin Street
 Ottawa, Ontario
