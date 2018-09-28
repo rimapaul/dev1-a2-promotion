@@ -33,7 +33,7 @@ Sometimes you can combine multiple promotions to get a really great deal. For th
 
 ## Specifications
 
-Write, in a file called `promotion.rb` in your Assignment 2 repository, a program that asks a person to enter the filename of a file that contains an order. Your program should read in this file, line by line, and create an Order object that contains its data. The file reading should happen in an `OrderReader` class that you will create, using a method called `read(filename)`.
+Write, in a file called `promotion.rb` in your Assignment 2 repository, a program that asks a person to enter the filename of a file that contains an order. Your program should read in this file, line by line, and create an `Order` object that contains its data. The file reading should happen in an `OrderReader` class that you will create, using a method called `read(filename)`.
 
 Each order will have the following format (each part of the product line is separated by a tab):
 
@@ -42,20 +42,21 @@ line 1:   Order #<order-number>
 line 2:   <year>-<month>-<day>
 line 3:   <store-address>
 line 4:   <city>, <province>
-line 5+:  <quantity>  x <unit-price>  <product-name> (<product-id>)
+line 5+:  <quantity>	x	<unit-price>	<product-name>	(<product-id>)
 ```
 
 e.g.
 
 ```
 Order #1
+Order #1
 2018-09-28
 150 Elgin Street
 Ottawa, Ontario
-1 x  $5.00   Socks (123)
-3 x  $23.75  T-shirt (777)
-1 x  $9.99   Hat (953)
-1 x  $12.99  T-shirt (905)
+1	x	$5.00	Socks	(123)
+3	x	$23.75	T-shirt	(777)
+1	x	$9.99	Hat	(953)
+1	x	$12.99	T-shirt	(905)
 ```
 
 After reading the order, your program should output the details of the order to the console using the `Order`'s `to_s` method, then output a numbered list of discounts that can be applied to the order. Each of these types of discounts should be implemented as their own class that is a subclass of the provided [`Promotion`](promotion.rb) class.
