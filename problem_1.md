@@ -101,6 +101,8 @@ If the person fails to enter a valid number for the promotion type, your program
     > Hint: An invalid file will throw an exception if it is not found.
 
   * Read in the order file, line by line by calling your `OrderReader` object's `read(filename)` method.
+  
+  * If the file has an invalid format, throw a custom exception
 
   > Hint: Put all the file reading code in a `OrderReader` class.
 
