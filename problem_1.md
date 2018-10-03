@@ -140,3 +140,79 @@ Checkout the video below to see an example of how a solution to this problem mig
 
 [![Assignment 2 - Sample IO Video](http://img.youtube.com/vi/VeN8EMSOBG0/0.jpg)](http://www.youtube.com/watch?v=VeN8EMSOBG0 "Assignment 2 - Sample IO")
 
+### Console Logs 
+
+* Percentage discount
+
+```
+ruby promotion.rb
+Enter the order file: order.txt
+Order #1
+2018-09-28
+150 Elgin Street
+Ottawa, Ontario
+1	x	$5.0	Socks	(123)
+3	x	$23.75	T-shirt	(777)
+1	x	$9.99	Hat	(953)
+1	x	$12.99	T-shirt	(905)
+1: Percentage discount
+2: Limited time percentage discount
+3: Product percentage discount
+4: Dollar discount
+5: Limited time dollar discount
+Select a promotion to apply: 1
+Percentage (e.g. 5%): 10%
+Discount: $9.92
+```
+
+* Limited time percentage discount
+
+```
+ruby promotion.rb
+Enter the order file: order.txt
+Order #1
+2018-09-28
+150 Elgin Street
+Ottawa, Ontario
+1	x	$5.0	Socks	(123)
+3	x	$23.75	T-shirt	(777)
+1	x	$9.99	Hat	(953)
+1	x	$12.99	T-shirt	(905)
+1: Percentage discount
+2: Limited time percentage discount
+3: Product percentage discount
+4: Dollar discount
+5: Limited time dollar discount
+Select a promotion to apply: 2
+Percentage (e.g. 5%): 5%
+Start date (YYYY-MM-DD): 2018-01-01
+End date (YYYY-MM-DD): 2018-11-11
+Discount: $4.96
+```
+
+* Invalid file name, invalid number selection, outside date range
+
+```
+Enter the order file: order
+Enter the order file: order.txt
+Order #1
+2018-09-28
+150 Elgin Street
+Ottawa, Ontario
+1	x	$5.0	Socks	(123)
+3	x	$23.75	T-shirt	(777)
+1	x	$9.99	Hat	(953)
+1	x	$12.99	T-shirt	(905)
+1: Percentage discount
+2: Limited time percentage discount
+3: Product percentage discount
+4: Dollar discount
+5: Limited time dollar discount
+Select a promotion to apply: 0
+Select a promotion to apply: 6
+Select a promotion to apply: 2
+Percentage (e.g. 5%): 20%
+Start date (YYYY-MM-DD): 2018-01-01
+End date (YYYY-MM-DD): 2018-07-07
+Discount: $0.00
+```
