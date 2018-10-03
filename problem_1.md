@@ -133,3 +133,10 @@ If the person fails to enter a valid number for the promotion type, your program
   * Output the discount amount to the screen.
 
 7. Have fun! Be sure to share any helpful resources you find or any questions you have with everyone in the devdegree-2018 Slack channel.
+
+## Sample IO
+
+Checkout the video below to see an example of how a solution to this problem might look. You don't have to implement the same promotions listed below -- feel free to choose 5 from the list above.
+
+[![Assignment 2 - Sample IO Video](http://img.youtube.com/vi/VeN8EMSOBG0/0.jpg)](http://www.youtube.com/watch?v=VeN8EMSOBG0 "Assignment 2 - Sample IO")
+
